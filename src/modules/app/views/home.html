@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/home" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file"> <br>
+        <label for="options">Choose options</label>
+        <select id="options" name="options">
+            {%for option in options%}
+                <option value="{{ option }}">{{ options[option] }}</option>
+            {%endfor%}
+        </select>
+        <input type="submit" name="submit"> <br>
+    </form>
+    {%if img and plt%}
+    <img src="{{ img }}">
+    <img src="{{ plt }}">
+    {%endif%}
+</body>
+</html>

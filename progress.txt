@@ -1,0 +1,2 @@
+Membuat generator grayscale beserta graph untuk semua (cv, manual, equalize)
+Membuat upload image (save ke folder) dan generate image yang telah di upload (save folder), tapi tidak bisa ditampilkan
